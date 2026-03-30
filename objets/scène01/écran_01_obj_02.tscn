@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://b73jxd5qoy070"]
+
+[ext_resource type="PackedScene" uid="uid://d4y1u80507l4" path="res://objet.tscn" id="1_65jbr"]
+[ext_resource type="Texture2D" uid="uid://d33j412jpmjtt" path="res://textures/fonds/scène01/objets/scène01-obj02.png" id="2_8yda6"]
+
+[node name="écran01-obj02" unique_id=850387501 instance=ExtResource("1_65jbr")]
+nom = "A tall and dark figure"
+
+[node name="sprite" parent="." index="0" unique_id=491305544]
+texture = ExtResource("2_8yda6")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="1" unique_id=1457416001]
+polygon = PackedVector2Array(438, 195.7, 438, 198.3, 436.9, 200, 435, 200, 435, 222.8, 428.1, 226.6, 418, 225.2, 418, 222.8, 411.5, 226, 409.4, 226, 408, 231.8, 408, 239.8, 411.7, 243.5, 411, 248.9, 411, 251, 397.3, 262, 395.8, 262, 388.8, 276, 386.9, 276, 392, 366.1, 392, 373.6, 399, 383.5, 399, 387, 407, 383.5, 407, 390.1, 410, 392.1, 410, 393.2, 413.5, 395, 423.1, 395, 425.1, 392, 426.7, 392, 429.8, 371, 431.1, 371, 429.5, 341.4, 436.5, 345, 440.3, 345, 445.3, 334, 447, 334, 446, 286, 446, 280.3, 433, 264, 431, 255.6, 431, 251.6, 438.4, 250, 441, 250, 454, 234, 455.7, 234, 456.7, 227, 458, 227, 458, 211.5, 455, 205.5, 455, 203, 450, 199, 450, 197.2)

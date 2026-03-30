@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://d4y1u80507l4"]
+
+[ext_resource type="Script" uid="uid://dstn08s6m5x8" path="res://objet.gd" id="1_scoyf"]
+
+[node name="objet" type="Area2D" unique_id=850387501]
+script = ExtResource("1_scoyf")
+
+[node name="sprite" type="Sprite2D" parent="." unique_id=491305544]
+texture_filter = 1
+centered = false
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="trouvé" from="." to="." method="_on_trouvé"]

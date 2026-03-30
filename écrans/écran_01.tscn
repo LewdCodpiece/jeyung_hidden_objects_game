@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://baqvx6uh4llpp"]
+
+[ext_resource type="PackedScene" uid="uid://03niiisbjax7" path="res://écran.tscn" id="1_682r2"]
+[ext_resource type="Texture2D" uid="uid://dtja7nlegplbg" path="res://textures/fonds/scène01/scène01.png" id="2_jiqoa"]
+[ext_resource type="PackedScene" uid="uid://bdnumsn1oc14v" path="res://objets/scène01/scène_01_objet_01.tscn" id="3_hli2u"]
+[ext_resource type="PackedScene" uid="uid://b73jxd5qoy070" path="res://objets/scène01/écran_01_obj_02.tscn" id="4_yowcc"]
+[ext_resource type="PackedScene" uid="uid://pbjs8g8axfqs" path="res://objets/scène01/scène_01_obj_03.tscn" id="5_g4yml"]
+[ext_resource type="PackedScene" uid="uid://2jx6fmfywegv" path="res://objets/scène01/scène_01_obj_04.tscn" id="6_hw3h2"]
+
+[node name="écran01" unique_id=1253643248 instance=ExtResource("1_682r2")]
+nom = ""
+
+[node name="fond" parent="." index="0" unique_id=797016202]
+texture = ExtResource("2_jiqoa")
+
+[node name="scène01-objet01" parent="objets-cachés" parent_id_path=PackedInt32Array(1055847272) index="0" unique_id=850387501 instance=ExtResource("3_hli2u")]
+
+[node name="écran01-obj02" parent="objets-cachés" parent_id_path=PackedInt32Array(1055847272) index="1" unique_id=396243504 instance=ExtResource("4_yowcc")]
+
+[node name="scène01-obj03" parent="objets-cachés" parent_id_path=PackedInt32Array(1055847272) index="2" unique_id=829446983 instance=ExtResource("5_g4yml")]
+
+[node name="scène01-obj04" parent="objets-cachés" parent_id_path=PackedInt32Array(1055847272) index="3" unique_id=1396314179 instance=ExtResource("6_hw3h2")]
+
+[connection signal="fini" from="." to="." method="_on_fini"]

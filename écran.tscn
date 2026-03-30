@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://03niiisbjax7"]
+
+[ext_resource type="Script" uid="uid://blvxguaccbsgj" path="res://écran.gd" id="1_tl1e3"]
+
+[node name="écran" type="Node2D" unique_id=1253643248]
+script = ExtResource("1_tl1e3")
+nom = null
+nb_objets = null
+
+[node name="fond" type="Sprite2D" parent="." unique_id=797016202]
+texture_filter = 1
+centered = false
+
+[node name="objets-cachés" type="Node2D" parent="." unique_id=1055847272]

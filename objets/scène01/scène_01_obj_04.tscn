@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://2jx6fmfywegv"]
+
+[ext_resource type="PackedScene" uid="uid://d4y1u80507l4" path="res://objet.tscn" id="1_2rgjs"]
+[ext_resource type="Texture2D" uid="uid://dabvaaqc5u0jh" path="res://textures/fonds/scène01/objets/scène01-obj04.png" id="2_wrqrb"]
+
+[node name="scène01-obj04" unique_id=850387501 instance=ExtResource("1_2rgjs")]
+nom = "A bird like shape"
+
+[node name="sprite" parent="." index="0" unique_id=491305544]
+texture = ExtResource("2_wrqrb")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="1" unique_id=228235329]
+polygon = PackedVector2Array(503, 1, 503, 3, 498, 7, 498, 9.4, 494, 8.4, 494, 5.8, 487.5, 9, 484.2, 9, 486, 14.3, 486, 16.8, 497, 27.8, 497, 30.4, 508.6, 35, 512.6, 35, 514, 28.2, 514, 25.8, 518, 21.8, 518, 16.2, 524, 13.2, 524, 9.9, 512, 2.8, 512, 1)

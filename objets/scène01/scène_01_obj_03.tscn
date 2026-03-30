@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://pbjs8g8axfqs"]
+
+[ext_resource type="PackedScene" uid="uid://d4y1u80507l4" path="res://objet.tscn" id="1_f6fpe"]
+[ext_resource type="Texture2D" uid="uid://dqo78nhykwj4m" path="res://textures/fonds/scène01/objets/scène01-obj03.png" id="2_42x6y"]
+
+[node name="scène01-obj03" unique_id=850387501 instance=ExtResource("1_f6fpe")]
+nom = "Small yellow sign indicating an electromagnetic danger"
+
+[node name="sprite" parent="." index="0" unique_id=491305544]
+texture = ExtResource("2_42x6y")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="1" unique_id=624563163]
+polygon = PackedVector2Array(744, 19.9, 744, 22.9, 741, 24.9, 741, 40.7, 748.8, 42, 756, 42, 759, 38, 761, 38, 761, 27.7)
