@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cy4brxb5scp4w"]
+
+[ext_resource type="PackedScene" uid="uid://d4y1u80507l4" path="res://objet.tscn" id="1_jfxk1"]
+[ext_resource type="Texture2D" uid="uid://c732n28lho486" path="res://textures/fonds/scène03m01/objets/scène03-obj02.png" id="2_3x7lj"]
+
+[node name="obj2" unique_id=850387501 instance=ExtResource("1_jfxk1")]
+id = "S03M01O02"
+
+[node name="sprite" parent="." index="0" unique_id=491305544]
+texture = ExtResource("2_3x7lj")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="1" unique_id=494376156]
+polygon = PackedVector2Array(799, 402.7, 799, 405.7, 797, 406.8, 797, 410.4, 803.6, 413, 805, 416.4, 805, 418.4, 812.7, 421, 814.1, 421, 824.1, 432, 826.7, 439.4, 824, 436.2, 824, 434.8, 821.9, 433.7, 817, 436.9, 817, 441.7, 821.7, 447.4, 821, 448.2, 821, 451.1, 829, 456.1, 829, 457.5, 844.7, 462, 848.5, 462, 857, 467.1, 857, 468.8, 873, 470.7, 873, 472.5, 898.4, 467, 902, 467, 913, 469.5, 913, 470.2, 915.1, 471.3, 918.5, 469, 927, 474.1, 927, 475.3, 929.5, 476.4, 931.8, 474, 933.3, 474, 934.4, 471.7, 927.8, 464, 929.4, 461.5, 927, 459.1, 927, 456, 914.5, 461, 912.5, 461, 891.5, 449, 890.2, 449, 886.2, 440.5, 894, 446, 894, 448, 908, 448, 908, 443.8, 899.5, 439, 898.2, 439, 897, 436.5, 897, 435, 884, 425, 884, 423, 869.1, 423, 828, 413.4, 828, 411.6, 819.7, 413, 818.5, 413)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="." index="2" unique_id=792524594]
+polygon = PackedVector2Array(933, 465.6, 933, 477.8, 941.3, 475, 943.5, 475, 944.3, 472)

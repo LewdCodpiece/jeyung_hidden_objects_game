@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://btylm2bf4kmtu"]
+
+[ext_resource type="PackedScene" uid="uid://coh4vo61j3pcu" path="res://monde.tscn" id="1_s6qi7"]
+[ext_resource type="PackedScene" uid="uid://baqvx6uh4llpp" path="res://écrans/écran_01.tscn" id="2_npw55"]
+[ext_resource type="PackedScene" uid="uid://c80bvat6h84ck" path="res://écrans/scène_02m_01.tscn" id="3_npw55"]
+[ext_resource type="PackedScene" uid="uid://ce1px53kbdkpd" path="res://écrans/scène_03m_01.tscn" id="4_vec0k"]
+
+[node name="monde01" unique_id=631080555 instance=ExtResource("1_s6qi7")]
+nom = "monde01"
+
+[node name="écran01m01" parent="." index="0" unique_id=1253643248 instance=ExtResource("2_npw55")]
+visible = false
+nom = "scène01m01"
+
+[node name="scène02m01" parent="." index="1" unique_id=2025828396 groups=["monde1"] instance=ExtResource("3_npw55")]
+visible = false
+
+[node name="scène03m01" parent="." index="2" unique_id=1995331611 instance=ExtResource("4_vec0k")]
+visible = false

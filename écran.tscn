@@ -1,14 +1,74 @@
 [gd_scene format=3 uid="uid://03niiisbjax7"]
 
 [ext_resource type="Script" uid="uid://blvxguaccbsgj" path="res://écran.gd" id="1_tl1e3"]
+[ext_resource type="Theme" uid="uid://du6fqj4jse527" path="res://menus_thèmes.tres" id="2_7gf4j"]
+[ext_resource type="Texture2D" uid="uid://cqayt6r8hr53g" path="res://textures/icone_oeil.png" id="3_d8qyc"]
 
-[node name="écran" type="Node2D" unique_id=1253643248]
+[node name="écran" type="Node2D" unique_id=1253643248 groups=["persistant", "écrans"]]
 script = ExtResource("1_tl1e3")
-nom = null
-nb_objets = null
 
 [node name="fond" type="Sprite2D" parent="." unique_id=797016202]
 texture_filter = 1
 centered = false
 
 [node name="objets-cachés" type="Node2D" parent="." unique_id=1055847272]
+
+[node name="hud" type="Control" parent="." unique_id=1260873465]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+theme = ExtResource("2_7gf4j")
+
+[node name="Area2D" type="Area2D" parent="hud" unique_id=1982093770]
+position = Vector2(35, 30)
+
+[node name="Sprite2D" type="Sprite2D" parent="hud/Area2D" unique_id=290064923]
+texture_filter = 1
+texture = ExtResource("3_d8qyc")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="hud/Area2D" unique_id=681054417]
+polygon = PackedVector2Array(18, -13.6, -7, -19.5, -7, -17.5, -14.3, -15, -16.8, -15, -23.8, -8, -24, 5.6000004, -16, 12.799999, -16, 14.200001, -8.5, 18, 5.5, 18, 12.5, 14, 16, 14, 24, 4, 24, -7.799999, 18, -12.1)
+
+[node name="liste_indices" type="VBoxContainer" parent="hud" unique_id=701724695]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 59.0
+offset_right = 11.0
+offset_bottom = 59.0
+alignment = 2
+
+[node name="transparent_cd" type="Timer" parent="hud" unique_id=2002238324]
+wait_time = 5.0
+one_shot = true
+
+[node name="menu_échap" type="PanelContainer" parent="hud" unique_id=77577161]
+visible = false
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+
+[node name="menu_boutons" type="VBoxContainer" parent="hud/menu_échap" unique_id=2049104997]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="bouton_return" type="Button" parent="hud/menu_échap/menu_boutons" unique_id=518325997]
+layout_mode = 2
+text = "MENU_ECHAP_RETURN"
+
+[node name="bouton_paramètre" type="Button" parent="hud/menu_échap/menu_boutons" unique_id=43380147]
+layout_mode = 2
+text = "MENU_SETTINGS"
+
+[node name="bouton_quiter" type="Button" parent="hud/menu_échap/menu_boutons" unique_id=770357335]
+layout_mode = 2
+text = "MENU_QUIT"
+
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
+[connection signal="mouse_entered" from="hud/Area2D" to="." method="_on_liste_indices_mouse_entered"]
+[connection signal="mouse_exited" from="hud/Area2D" to="." method="_on_liste_indices_mouse_exited"]
+[connection signal="pressed" from="hud/menu_échap/menu_boutons/bouton_return" to="." method="_on_bouton_return_pressed"]
+[connection signal="pressed" from="hud/menu_échap/menu_boutons/bouton_paramètre" to="." method="_on_bouton_paramètre_pressed"]
+[connection signal="pressed" from="hud/menu_échap/menu_boutons/bouton_quiter" to="." method="_on_bouton_quiter_pressed"]

@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://boh21kqfv5d6o"]
+
+[ext_resource type="PackedScene" uid="uid://d4y1u80507l4" path="res://objet.tscn" id="1_xxipa"]
+[ext_resource type="Texture2D" uid="uid://dyuo0vmf0e8fr" path="res://textures/fonds/scène01m01/objets/scène01-obj06.png" id="2_yyexh"]
+
+[node name="scène01-obj06" unique_id=850387501 instance=ExtResource("1_xxipa")]
+id = "S01M01O06NOM"
+
+[node name="sprite" parent="." index="0" unique_id=491305544]
+texture = ExtResource("2_yyexh")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="1" unique_id=231868042]
+polygon = PackedVector2Array(59, 81, 59, 82, 54.3, 82, 46.3, 88, 43.9, 88, 45, 109.1, 45, 120.1, 51, 124.1, 51, 127.3, 49.5, 129.2, 49, 125.7, 49, 123.9, 46, 121.9, 46, 120.8, 43.9, 119.7, 40.4, 122, 37.6, 122, 39, 130.3, 39, 134.5, 46, 146.4, 46, 148.9, 54, 155.8, 54, 157.6, 72, 161.6, 72, 163.4, 84.4, 161, 87.9, 161, 97, 150.8, 97, 149.4, 99.8, 150, 102.4, 150, 112.4, 146, 117, 146, 126, 134, 128, 134, 128, 125.5, 121, 113.5, 121, 111.5, 84.3, 101, 83, 101, 83, 84.8, 79, 82.7, 79, 81)

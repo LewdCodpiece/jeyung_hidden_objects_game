@@ -1,0 +1,9 @@
+[gd_resource type="LabelSettings" format=3 uid="uid://dys1bplgtjarc"]
+
+[ext_resource type="FontFile" uid="uid://c4n01flkp5rxc" path="res://fonts/Comico-Regular.otf" id="1_65flv"]
+
+[resource]
+font = ExtResource("1_65flv")
+font_size = 18
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)

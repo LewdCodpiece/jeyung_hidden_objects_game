@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://ce1px53kbdkpd"]
+
+[ext_resource type="PackedScene" uid="uid://03niiisbjax7" path="res://écran.tscn" id="1_0ym4o"]
+[ext_resource type="Texture2D" uid="uid://5tyux2t3p4v0" path="res://textures/fonds/scène03m01/scène03m01.png" id="2_5t7ad"]
+[ext_resource type="PackedScene" uid="uid://cs4w0vsvcmnn1" path="res://objets/scène03m01/obj_1.tscn" id="3_yhsfw"]
+[ext_resource type="PackedScene" uid="uid://cy4brxb5scp4w" path="res://objets/scène03m01/obj_2.tscn" id="4_tdv32"]
+[ext_resource type="PackedScene" uid="uid://bnxsoq2mbyxsj" path="res://objets/scène03m01/obj_3.tscn" id="5_nnu0k"]
+[ext_resource type="PackedScene" uid="uid://dm2hrsj8jcm3o" path="res://objets/scène03m01/obj_4.tscn" id="6_650dm"]
+[ext_resource type="PackedScene" uid="uid://c5mgcap0q5osa" path="res://objets/scène03m01/obj_05.tscn" id="7_v24c3"]
+[ext_resource type="PackedScene" uid="uid://dba2xljn60od5" path="res://objets/scène03m01/obj_6.tscn" id="8_ei4qd"]
+[ext_resource type="PackedScene" uid="uid://kqs63i7xssei" path="res://objets/scène03m01/obj_7.tscn" id="9_gqwla"]
+[ext_resource type="PackedScene" uid="uid://cgatt7pfs5mxv" path="res://objets/scène03m01/obj_8.tscn" id="10_y6gch"]
+[ext_resource type="PackedScene" uid="uid://drdk3jn28skom" path="res://objets/scène03m01/obj_9.tscn" id="11_c3hn5"]
+[ext_resource type="PackedScene" uid="uid://bk7575601q8oj" path="res://objets/scène03m01/obj_10.tscn" id="12_3kybk"]
+[ext_resource type="PackedScene" uid="uid://bpqxc2aylnb2h" path="res://objets/scène03m01/obj_11.tscn" id="13_usjh6"]
+
+[node name="scène03m01" unique_id=1253643248 groups=["monde1"] instance=ExtResource("1_0ym4o")]
+nom = "scène03m01"
+
+[node name="fond" parent="." index="0" unique_id=797016202]
+texture = ExtResource("2_5t7ad")
+
+[node name="obj1" parent="objets-cachés" parent_id_path=PackedInt32Array(1055847272) index="0" unique_id=850387501 instance=ExtResource("3_yhsfw")]
+
+[node name="obj2" parent="objets-cachés" parent_id_path=PackedInt32Array(1055847272) index="1" unique_id=2133174700 instance=ExtResource("4_tdv32")]
+
+[node name="obj3" parent="objets-cachés" parent_id_path=PackedInt32Array(1055847272) index="2" unique_id=238111115 instance=ExtResource("5_nnu0k")]
+
+[node name="obj4" parent="objets-cachés" parent_id_path=PackedInt32Array(1055847272) index="3" unique_id=1671299810 instance=ExtResource("6_650dm")]
+
+[node name="obj05" parent="objets-cachés" parent_id_path=PackedInt32Array(1055847272) index="4" unique_id=266677850 instance=ExtResource("7_v24c3")]
+
+[node name="obj6" parent="objets-cachés" parent_id_path=PackedInt32Array(1055847272) index="5" unique_id=1163244999 instance=ExtResource("8_ei4qd")]
+
+[node name="obj7" parent="objets-cachés" parent_id_path=PackedInt32Array(1055847272) index="6" unique_id=110843759 instance=ExtResource("9_gqwla")]
+
+[node name="obj8" parent="objets-cachés" parent_id_path=PackedInt32Array(1055847272) index="7" unique_id=1785798594 instance=ExtResource("10_y6gch")]
+
+[node name="obj9" parent="objets-cachés" parent_id_path=PackedInt32Array(1055847272) index="8" unique_id=923420447 instance=ExtResource("11_c3hn5")]
+
+[node name="obj10" parent="objets-cachés" parent_id_path=PackedInt32Array(1055847272) index="9" unique_id=718934550 instance=ExtResource("12_3kybk")]
+
+[node name="obj11" parent="objets-cachés" parent_id_path=PackedInt32Array(1055847272) index="10" unique_id=1539657487 instance=ExtResource("13_usjh6")]

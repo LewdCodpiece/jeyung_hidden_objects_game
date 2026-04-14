@@ -1,0 +1,62 @@
+[gd_resource type="Theme" format=3 uid="uid://du6fqj4jse527"]
+
+[ext_resource type="FontFile" uid="uid://c4n01flkp5rxc" path="res://fonts/Comico-Regular.otf" id="1_3rnpx"]
+[ext_resource type="Texture2D" uid="uid://dpov6fi1ml3c6" path="res://textures/cadre_hud.png" id="1_ohssk"]
+[ext_resource type="Texture2D" uid="uid://c2c6wwkmum1n6" path="res://textures/bouton_défaut.png" id="1_xvo3t"]
+[ext_resource type="Texture2D" uid="uid://cjmif08thn208" path="res://textures/bouton_appuyé.png" id="3_ronog"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1tloa"]
+load_path = "res://.godot/imported/bouton_défaut.png-96da4181658789e55aac92a75b7ce32c.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fomop"]
+texture = SubResource("CompressedTexture2D_1tloa")
+texture_margin_left = 14.0
+texture_margin_top = 14.0
+texture_margin_right = 14.0
+texture_margin_bottom = 14.0
+modulate_color = Color(1, 1, 0.7882353, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sgbrk"]
+texture = ExtResource("1_xvo3t")
+texture_margin_left = 14.0
+texture_margin_top = 14.0
+texture_margin_right = 14.0
+texture_margin_bottom = 14.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kfqik"]
+texture = ExtResource("3_ronog")
+texture_margin_left = 14.0
+texture_margin_top = 14.0
+texture_margin_right = 14.0
+texture_margin_bottom = 14.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xvo3t"]
+texture = ExtResource("1_ohssk")
+texture_margin_left = 10.0
+texture_margin_top = 10.0
+texture_margin_right = 10.0
+texture_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3rnpx"]
+bg_color = Color(0.415003, 0.1526444, 0.5167465, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[resource]
+Button/colors/font_color = Color(0.16862746, 0, 0.23921569, 1)
+Button/font_sizes/font_size = 20
+Button/fonts/font = ExtResource("1_3rnpx")
+Button/styles/hover = SubResource("StyleBoxTexture_fomop")
+Button/styles/normal = SubResource("StyleBoxTexture_sgbrk")
+Button/styles/pressed = SubResource("StyleBoxTexture_kfqik")
+Label/font_sizes/font_size = 16
+Label/fonts/font = ExtResource("1_3rnpx")
+OptionButton/font_sizes/font_size = 20
+OptionButton/fonts/font = ExtResource("1_3rnpx")
+Panel/styles/panel = SubResource("StyleBoxTexture_xvo3t")
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_xvo3t")
+PopupMenu/font_sizes/font_size = 18
+PopupMenu/fonts/font = ExtResource("1_3rnpx")
+PopupMenu/styles/panel = SubResource("StyleBoxFlat_3rnpx")

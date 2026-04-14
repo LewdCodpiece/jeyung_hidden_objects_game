@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://5bwecf2j22jt"]
+
+[ext_resource type="Theme" uid="uid://du6fqj4jse527" path="res://menus_thèmes.tres" id="1_63w0h"]
+[ext_resource type="Script" uid="uid://b67uoy5me6evq" path="res://menu_paramètres.gd" id="1_disd0"]
+
+[node name="menu_paramètres" type="Control" unique_id=1231294030]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_63w0h")
+script = ExtResource("1_disd0")
+
+[node name="fond" type="Panel" parent="." unique_id=572197382]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+
+[node name="grille_menu" type="GridContainer" parent="fond" unique_id=1982486173]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 8.0
+offset_right = 1270.0
+offset_bottom = 711.0
+
+[node name="langue_jeu" type="HBoxContainer" parent="fond/grille_menu" unique_id=1673755110]
+layout_mode = 2
+
+[node name="nom_entrée" type="Label" parent="fond/grille_menu/langue_jeu" unique_id=1401313997]
+layout_mode = 2
+
+[node name="liste_langues" type="OptionButton" parent="fond/grille_menu/langue_jeu" unique_id=2134344]
+layout_mode = 2
+
+[node name="bouton_quitter" type="Button" parent="fond/grille_menu" unique_id=530581130]
+layout_mode = 2
+
+[connection signal="item_selected" from="fond/grille_menu/langue_jeu/liste_langues" to="." method="_on_liste_langues_item_selected"]
+[connection signal="pressed" from="fond/grille_menu/bouton_quitter" to="." method="_on_bouton_quitter_pressed"]

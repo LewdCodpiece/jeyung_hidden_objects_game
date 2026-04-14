@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://c80bvat6h84ck"]
+
+[ext_resource type="PackedScene" uid="uid://03niiisbjax7" path="res://écran.tscn" id="1_rpqf7"]
+[ext_resource type="Texture2D" uid="uid://ima60bt01i72" path="res://textures/fonds/scène02m01/scène02m01.png" id="2_5o7xm"]
+[ext_resource type="PackedScene" uid="uid://cln3h1uon5xnl" path="res://objets/scène02m01/objet1.tscn" id="3_eemm6"]
+[ext_resource type="PackedScene" uid="uid://1j67x1kohy65" path="res://objets/scène02m01/objet2.tscn" id="4_pex7p"]
+[ext_resource type="PackedScene" uid="uid://c6y1l3llp3ovx" path="res://objets/scène02m01/objet3.tscn" id="5_ot2sc"]
+[ext_resource type="PackedScene" uid="uid://chafmkjoyeiq2" path="res://objets/scène02m01/objet4.tscn" id="6_3kgml"]
+[ext_resource type="PackedScene" uid="uid://cl2vv48djmttb" path="res://objets/scène02m01/objet5.tscn" id="7_ep387"]
+[ext_resource type="PackedScene" uid="uid://1pc3bkboiwpm" path="res://objets/scène02m01/objet6.tscn" id="8_t6lfh"]
+[ext_resource type="PackedScene" uid="uid://c5mws2mwuqrx4" path="res://objets/scène02m01/objet7.tscn" id="9_usjrs"]
+[ext_resource type="PackedScene" uid="uid://cyurdu43dj5x3" path="res://objets/scène02m01/objet.tscn" id="10_owaoc"]
+[ext_resource type="PackedScene" uid="uid://cd1p1hehd0si2" path="res://objets/scène02m01/obj_1.tscn" id="11_ytiah"]
+
+[node name="scène02m01" unique_id=1253643248 groups=["monde1"] instance=ExtResource("1_rpqf7")]
+nom = "scène02m01"
+
+[node name="fond" parent="." index="0" unique_id=797016202]
+texture = ExtResource("2_5o7xm")
+
+[node name="objet" parent="objets-cachés" parent_id_path=PackedInt32Array(1055847272) index="0" unique_id=850387501 instance=ExtResource("3_eemm6")]
+
+[node name="objet2" parent="objets-cachés" parent_id_path=PackedInt32Array(1055847272) index="1" unique_id=1218678732 instance=ExtResource("4_pex7p")]
+
+[node name="objet3" parent="objets-cachés" parent_id_path=PackedInt32Array(1055847272) index="2" unique_id=1009170193 instance=ExtResource("5_ot2sc")]
+
+[node name="objet4" parent="objets-cachés" parent_id_path=PackedInt32Array(1055847272) index="3" unique_id=5027080 instance=ExtResource("6_3kgml")]
+
+[node name="objet5" parent="objets-cachés" parent_id_path=PackedInt32Array(1055847272) index="4" unique_id=1302507722 instance=ExtResource("7_ep387")]
+
+[node name="objet6" parent="objets-cachés" parent_id_path=PackedInt32Array(1055847272) index="5" unique_id=692526255 instance=ExtResource("8_t6lfh")]
+
+[node name="objet7" parent="objets-cachés" parent_id_path=PackedInt32Array(1055847272) index="6" unique_id=202995042 instance=ExtResource("9_usjrs")]
+
+[node name="objet8" parent="objets-cachés" parent_id_path=PackedInt32Array(1055847272) index="7" unique_id=1282932656 instance=ExtResource("10_owaoc")]
+
+[node name="obj1" parent="objets-cachés" parent_id_path=PackedInt32Array(1055847272) index="8" unique_id=1682268548 instance=ExtResource("11_ytiah")]

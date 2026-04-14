@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b1nuqltqcsxmk"]
+
+[ext_resource type="PackedScene" uid="uid://d4y1u80507l4" path="res://objet.tscn" id="1_bgqyu"]
+[ext_resource type="Texture2D" uid="uid://x2v7pj3xpb2n" path="res://textures/fonds/scène01m02/objets/scène01-obj08.png" id="2_6vdym"]
+
+[node name="objet" unique_id=850387501 instance=ExtResource("1_bgqyu")]
+id = "S01M02O08"
+
+[node name="sprite" parent="." index="0" unique_id=491305544]
+texture = ExtResource("2_6vdym")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="1" unique_id=825775041]
+polygon = PackedVector2Array(992, 336.4, 992, 338.7, 989.5, 340, 987.7, 340, 986.6, 342.5, 988.2, 344.1, 986.5, 345, 984.9, 345, 979.9, 353, 977.2, 353, 979, 358.3, 979, 361.2, 989.5, 367, 990.8, 367, 992.8, 371, 995.8, 371, 999, 367.8, 999, 367, 1005.1, 367, 1010.1, 359, 1012, 359, 1012, 351.1, 1003.3, 343.4, 1004, 342.8, 1004, 339.4)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="." index="2" unique_id=1990396870]
+polygon = PackedVector2Array(995.2, 366.7, 993, 367.8, 993, 368.9, 991.3, 370, 989.8, 370, 988.7, 372.1, 993.9, 380, 997.8, 380, 1001, 376.8, 1001, 371)

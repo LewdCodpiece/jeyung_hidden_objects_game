@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://nynt2wl2nopo"]
+
+[ext_resource type="PackedScene" uid="uid://coh4vo61j3pcu" path="res://monde.tscn" id="1_5i74f"]
+[ext_resource type="PackedScene" uid="uid://bj3ge313csx78" path="res://écrans/scène_01m_02.tscn" id="2_853qd"]
+
+[node name="monde2" unique_id=631080555 instance=ExtResource("1_5i74f")]
+nom = "monde2"
+
+[node name="écran01m02" parent="." index="0" unique_id=1253643248 instance=ExtResource("2_853qd")]
+visible = false

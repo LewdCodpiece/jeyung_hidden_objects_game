@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://bumw13k1vc261"]
+
+[ext_resource type="PackedScene" uid="uid://d4y1u80507l4" path="res://objet.tscn" id="1_qr11x"]
+[ext_resource type="Texture2D" uid="uid://8lcts5vefmab" path="res://textures/fonds/scène01m02/objets/scène01-obj10.png" id="2_q8w6e"]
+
+[node name="objet" unique_id=850387501 instance=ExtResource("1_qr11x")]
+id = "S01M02O10"
+
+[node name="sprite" parent="." index="0" unique_id=491305544]
+texture = ExtResource("2_q8w6e")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="1" unique_id=899001133]
+polygon = PackedVector2Array(154.6, 224.6, 152, 225.6, 152, 226.7, 150, 227.8, 150, 230.5, 153.5, 237.5, 153, 239.8, 153, 243, 163, 243, 163, 234.2)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="." index="2" unique_id=1574659938]
+polygon = PackedVector2Array(148, 239, 148, 242.5, 145.9, 246, 144.8, 246, 143.7, 248.1, 145.3, 250.6, 138, 252.4, 138, 257, 142, 260, 142, 262.9, 152.4, 259, 155, 268, 155, 270.4, 157.6, 271.4, 162.9, 265, 165.8, 265, 163, 256.6, 163, 254.1, 155.7, 247.9, 157, 245.5, 157, 242.6)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="." index="3" unique_id=591085826]
+polygon = PackedVector2Array(132, 240, 132, 243.4, 126, 252, 124.7, 252, 123.6, 254.5, 128, 258.8, 128, 260.2, 130.1, 261.3, 136.6, 257, 138.2, 257, 143, 247.5, 143, 244.7)
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="." index="4" unique_id=1542593634]
+polygon = PackedVector2Array(120, 242, 120, 244.2, 118.2, 246, 115, 246, 118, 253.4, 118, 255.3, 120.3, 256.4, 127.7, 250, 129.2, 250, 130.3, 247.9, 128, 244.3, 128, 242)
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="." index="5" unique_id=1852998514]
+polygon = PackedVector2Array(169, 257.7, 167, 258.8, 167, 259.9, 165.3, 261, 163.7, 261, 162.6, 263.5, 166.8, 267.6, 162.6, 274.2, 157.4, 272, 155.6, 272, 154, 264.6, 154, 260.6, 144.5, 266, 142.2, 266, 140, 291.9, 140, 300.4, 144, 311.4, 144, 315.2, 143.4, 315.7, 139.7, 313, 138.4, 313, 137, 308.7, 137, 304.8, 130.5, 308, 127.2, 308, 129, 313.3, 129, 315.8, 148.1, 337, 151.6, 346, 152, 361.3, 142, 377.4, 142, 382.8, 147.2, 388, 150.1, 388, 157.8, 374.7, 159, 378.3, 159, 380.5, 161.9, 381.3, 163.7, 378.2, 167.3, 397, 170.8, 397, 174, 393.8, 174, 386.8, 178, 382.8, 180.8, 383, 184, 379.8, 184, 375.7, 184.7, 376, 188.1, 376, 190.1, 373, 191.4, 373, 198, 355.4, 198, 343.2, 172.9, 315, 172.1, 315, 165, 303.4, 165, 290.2, 179, 284.3, 179, 283.6, 199, 279.6, 199, 276.3, 195, 271, 191.7, 271, 175.2, 276.7, 176, 268.1, 176, 261.9)
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="." index="6" unique_id=1088151173]
+polygon = PackedVector2Array(155.8, 381.7, 153, 382.5, 153, 384.2, 142.1, 397, 140.7, 397, 139.6, 399.3, 145, 405.7, 145, 407.2, 147.1, 408.3, 150.6, 406, 152.3, 406, 153.4, 403.5, 152, 402.1, 152, 400.7, 159, 392, 160.2, 392, 161.3, 389.9)
+
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="." index="7" unique_id=838501728]
+polygon = PackedVector2Array(155.2, 401.7, 153, 402.8, 153, 404.3, 148.9, 411, 145.8, 411, 149.8, 419, 153, 419, 157, 414, 158.1, 414, 161, 409.6, 161, 406)

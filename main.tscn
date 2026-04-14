@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://dq5amxi45tjlt"]
+
+[ext_resource type="Script" uid="uid://cbdde1cevgger" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://bk5757adx36aw" path="res://menu_accueil.tscn" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://btylm2bf4kmtu" path="res://mondes/monde_01.tscn" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://nynt2wl2nopo" path="res://mondes/monde_2.tscn" id="3_1bvp3"]
+[ext_resource type="Theme" uid="uid://du6fqj4jse527" path="res://menus_thèmes.tres" id="5_lquwl"]
+
+[node name="main" type="Node2D" unique_id=1574731379]
+script = ExtResource("1_ig7tw")
+
+[node name="monde01" parent="." unique_id=631080555 instance=ExtResource("2_h2yge")]
+
+[node name="monde2" parent="." unique_id=1564291601 instance=ExtResource("3_1bvp3")]
+
+[node name="musique" type="AudioStreamPlayer" parent="." unique_id=2041192797]
+
+[node name="menu_accueil" parent="." unique_id=1114742890 instance=ExtResource("2_0xm2m")]
+
+[node name="popup_tuto" type="Panel" parent="." unique_id=1283844477]
+offset_left = 421.0
+offset_top = 144.0
+offset_right = 893.0
+offset_bottom = 571.0
+theme = ExtResource("5_lquwl")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="popup_tuto" unique_id=198849546]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 3.0
+offset_right = 462.0
+offset_bottom = 411.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="popup_tuto/VBoxContainer" unique_id=498873456]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "Thanks for downloading my game!
+Before you get started, I must warn you that is game is meant to be played in a language you do not understand, preferably in the language I designed for it Jéyung. As such, the game starts in this language and I recommend you keep it that way and visit [url=https://liturgic-compulsions.neocities.org/jeyung-grammar/jeyung-accueil]my website[/url] where you will find a comprehensive grammar.
+If you wish to play in English or French, feel free to click on \"Zolèwé\" in the main menu and set the \"Ubong\" tab to your desired language.
+Whatever you chose, I bid you a good gaming!
+[right]Kyih.[/right]"
+
+[node name="CheckButton" type="CheckButton" parent="popup_tuto/VBoxContainer" unique_id=542935334]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Do not show this message again"
+
+[node name="Button" type="Button" parent="popup_tuto/VBoxContainer" unique_id=818727608]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Understood"
+
+[connection signal="tree_entered" from="." to="." method="_on_tree_entered"]
+[connection signal="toggled" from="popup_tuto/VBoxContainer/CheckButton" to="." method="_on_check_button_toggled"]
+[connection signal="pressed" from="popup_tuto/VBoxContainer/Button" to="." method="_on_button_pressed"]
