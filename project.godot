@@ -10,10 +10,12 @@ config_version=5
 
 [application]
 
-config/name="objets-cachés"
+config/name="Jeyung Invasion"
+config/description="A simple hidden objects game with a linguistic twist! "
+config/version="0.1"
 run/main_scene="uid://dq5amxi45tjlt"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://cqayt6r8hr53g"
 
 [autoload]
 
