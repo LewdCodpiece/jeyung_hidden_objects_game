@@ -46,7 +46,7 @@ offset_left = 10.0
 offset_top = 687.0
 offset_right = 981.0
 offset_bottom = 711.0
-text = "This project was brought to you by the Jeyung language institue as well as the Thematic Jeyung grammae."
+text = "This project was brought to you by the Jeyung language institute as well as the Thematic Jeyung grammar."
 
 [node name="logo" type="TextureRect" parent="." unique_id=54961205]
 layout_mode = 0

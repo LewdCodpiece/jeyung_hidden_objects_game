@@ -15,6 +15,8 @@ config/description="A simple hidden objects game with a linguistic twist! "
 config/version="0.1"
 run/main_scene="uid://dq5amxi45tjlt"
 config/features=PackedStringArray("4.6", "Forward Plus")
+run/max_fps=60
+boot_splash/bg_color=Color(0.21444494, 0.00032314987, 0.32324016, 1)
 config/icon="uid://cqayt6r8hr53g"
 
 [autoload]

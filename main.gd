@@ -44,3 +44,7 @@ func _on_check_button_toggled(toggled_on: bool) -> void:
 
 func _on_button_pressed() -> void:
 	popup_tuto.queue_free()
+
+
+func _on_rich_text_label_meta_clicked(meta: Variant) -> void:
+	OS.shell_open(str(meta))
