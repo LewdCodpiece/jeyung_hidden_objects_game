@@ -32,6 +32,7 @@ texture = ExtResource("3_d8qyc")
 polygon = PackedVector2Array(18, -13.6, -7, -19.5, -7, -17.5, -14.3, -15, -16.8, -15, -23.8, -8, -24, 5.6000004, -16, 12.799999, -16, 14.200001, -8.5, 18, 5.5, 18, 12.5, 14, 16, 14, 24, 4, 24, -7.799999, 18, -12.1)
 
 [node name="liste_indices" type="VBoxContainer" parent="hud" unique_id=701724695]
+custom_minimum_size = Vector2(400, 0)
 layout_mode = 0
 offset_left = 11.0
 offset_top = 59.0

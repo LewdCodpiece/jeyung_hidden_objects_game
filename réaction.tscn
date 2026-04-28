@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://ofv6s1c1ryky"]
+
+[ext_resource type="Texture2D" uid="uid://c3vumpla6oj4k" path="res://textures/images_réactions03.png" id="1_pk7po"]
+[ext_resource type="Script" uid="uid://cnuhyhgaehr2r" path="res://réaction.gd" id="1_u6sm4"]
+
+[sub_resource type="Animation" id="Animation_u6sm4"]
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_uyrtv"]
+resource_name = "apparition01"
+length = 1.3
+
+[sub_resource type="Animation" id="Animation_rydla"]
+resource_name = "apparition02"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0g5nc"]
+_data = {
+&"RESET": SubResource("Animation_u6sm4"),
+&"apparition01": SubResource("Animation_uyrtv"),
+&"apparition02": SubResource("Animation_rydla")
+}
+
+[node name="réaction" type="Node2D" unique_id=598408005]
+script = ExtResource("1_u6sm4")
+
+[node name="image" type="Sprite2D" parent="." unique_id=1474678206]
+texture = ExtResource("1_pk7po")
+
+[node name="animation" type="AnimationPlayer" parent="." unique_id=1269920871]
+libraries/ = SubResource("AnimationLibrary_0g5nc")

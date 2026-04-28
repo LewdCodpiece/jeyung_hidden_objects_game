@@ -1,2 +1,6 @@
+AnimatedSprite2D
+AnimationPlayer
+AudioStreamPlayer
+Sprite2D
 TextureRect
 Label

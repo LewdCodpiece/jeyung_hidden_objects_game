@@ -10,6 +10,8 @@ class_name Ecran extends Node2D
 @onready var indices_cd = $hud/transparent_cd
 @onready var menu_échap = $"hud/menu_échap"
 
+@onready var réaction = $"réaction"
+
 var est_fini: bool = false
 # pour la visibilité de la liste d'indices
 var indices_in_focus: bool = false
@@ -30,6 +32,8 @@ func _ready() -> void:
 		if obj is Objet:
 			obj.trouvé.connect(_tester_si_fini) # test si la win condition est rempli
 			obj.trouvé.connect(_maj_liste_indices) # montre les indices avec 
+			obj.trouvé.connect(_réagir_trouvé) # active les réactions / effets sonores quand un objet est trouvé
+			
 			# on met à jour la description de chaque objet pour faire en sorte qu'elle suive la langue du jeu
 			obj.translate_name()
 	# fait la liste des indices
@@ -160,3 +164,6 @@ func save() -> Dictionary:
 	}
 	
 	return dict_données
+
+func _réagir_trouvé():
+	réaction.jouer_réaction()
