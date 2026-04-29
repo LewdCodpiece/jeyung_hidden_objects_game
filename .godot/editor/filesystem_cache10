@@ -1,9 +1,9 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1777396639
-export_presets.cfg::TextFile::-1::1776205836::0::1::::<><><>0<>0<><>::
+::res://::1777492113
+export_presets.cfg::TextFile::-1::1777399829::0::1::::<><><>0<>0<><>::
 indice_label_settings.tres::LabelSettings::8882534330712447292::1775251892::0::1::::<><><>0<>0<><>::uid://c4n01flkp5rxc::::res://fonts/Comico-Regular.otf
-main.gd::GDScript::4849414007347093041::1777396519::0::1::::<>Node2D<><>0<>0<><>::
-main.tscn::PackedScene::8344237533190436933::1777396639::0::1::::<><><>0<>0<><>::uid://cbdde1cevgger::::res://main.gd<>uid://bk5757adx36aw::::res://menu_accueil.tscn<>uid://btylm2bf4kmtu::::res://mondes/monde_01.tscn<>uid://nynt2wl2nopo::::res://mondes/monde_2.tscn<>uid://6cw2h1duybpp::::res://sons/clique_sfx1.wav<>uid://ialkrl8xpxoq::::res://textures/clique_animation.png<>uid://du6fqj4jse527::::res://menus_thèmes.tres<>uid://bucnurnr1o803::::res://textures/clique_animation2.png
+main.gd::GDScript::4849414007347093041::1777396843::0::1::::<>Node2D<><>0<>0<><>::
+main.tscn::PackedScene::8344237533190436933::1777396843::0::1::::<><><>0<>0<><>::uid://cbdde1cevgger::::res://main.gd<>uid://bk5757adx36aw::::res://menu_accueil.tscn<>uid://btylm2bf4kmtu::::res://mondes/monde_01.tscn<>uid://nynt2wl2nopo::::res://mondes/monde_2.tscn<>uid://6cw2h1duybpp::::res://sons/clique_sfx1.wav<>uid://ialkrl8xpxoq::::res://textures/clique_animation.png<>uid://du6fqj4jse527::::res://menus_thèmes.tres<>uid://bucnurnr1o803::::res://textures/clique_animation2.png<>uid://2gh8nme4aaha::::res://textures/clique_animation3.png
 menus_thèmes.tres::Theme::8627367309824759630::1777395639::0::1::::<><><>0<>0<><>::uid://c4n01flkp5rxc::::res://fonts/Comico-Regular.otf<>uid://dpov6fi1ml3c6::::res://textures/cadre_hud.png<>uid://c2c6wwkmum1n6::::res://textures/bouton_défaut.png<>uid://cjmif08thn208::::res://textures/bouton_appuyé.png
 menu_accueil.gd::GDScript::7236574819315657782::1775480370::0::1::::<>Control<><>0<>0<><>::
 menu_accueil.tscn::PackedScene::3152238651196274882::1776266723::0::1::::<><><>0<>0<><>::uid://dbdplhqhj77u5::::res://menu_accueil.gd<>uid://du6fqj4jse527::::res://menus_thèmes.tres<>uid://fldagwrhp01::::res://textures/logo.png
@@ -16,10 +16,11 @@ monde.tscn::PackedScene::5771734901469609092::1774996701::0::1::::<><><>0<>0<><>
 monde_globals.gd::GDScript::1004966688751233306::1775139449::0::1::::<>Node<><>0<>0<><>::
 objet.gd::GDScript::248903533592570103::1776200243::0::1::::Objet<>Area2D<><>0<>0<><>::
 objet.tscn::PackedScene::271938226872297371::1776200298::0::1::::<><><>0<>0<><>::uid://dstn08s6m5x8::::res://objet.gd
-réaction.tscn::PackedScene::994297101873429044::1776511290::0::1::::<><><>0<>0<><>::uid://c3vumpla6oj4k::::res://textures/images_réactions03.png
+réaction.gd::GDScript::5727052144702819939::1777398604::0::1::::<>Node2D<><>0<>0<><>::
+réaction.tscn::PackedScene::994297101873429044::1777398709::0::1::::<><><>0<>0<><>::uid://c3vumpla6oj4k::::res://textures/images_réactions03.png<>uid://cnuhyhgaehr2r::::res://réaction.gd
 shader_obj_trouvé.gdshader::Shader::640489372775397775::1776181360::0::1::::<><><>0<>0<><>::
-écran.gd::GDScript::3203258152704377349::1776200233::0::1::::Ecran<>Node2D<><>0<>0<><>::
-écran.tscn::PackedScene::1813327708686451526::1776514789::0::1::::<><><>0<>0<><>::uid://blvxguaccbsgj::::res://écran.gd<>uid://du6fqj4jse527::::res://menus_thèmes.tres<>uid://cqayt6r8hr53g::::res://textures/icone_oeil.png
+écran.gd::GDScript::3203258152704377349::1777398645::0::1::::Ecran<>Node2D<><>0<>0<><>::
+écran.tscn::PackedScene::1813327708686451526::1777399385::0::1::::<><><>0<>0<><>::uid://blvxguaccbsgj::::res://écran.gd<>uid://du6fqj4jse527::::res://menus_thèmes.tres<>uid://cqayt6r8hr53g::::res://textures/icone_oeil.png
 ::res://fonts/::1776204192
 Comico-Regular.otf::FontFile::6836719379237805364::1772108564::1776204192::1::::<><><>0<>0<>d8e147cbd17fe04dbb7c8772d28e0ef1<>res://.godot/imported/Comico-Regular.otf-27214c5a2f0d4546a4c65fc58a1a7a73.fontdata::
 ::res://localization/::1777329408
@@ -92,7 +93,7 @@ clique_sfx8.wav::AudioStreamWAV::4045551626994982982::1777393357::1777393382::1:
 clique_sfx9.wav::AudioStreamWAV::7006467217449121668::1777393389::1777393429::1::::<><><>0<>0<>9b16be2660730508d2b7e00e8705d1be<>res://.godot/imported/clique_sfx9.wav-6ef228284e4c62b7d81728aa00e8c134.sample::
 clique_sfx10.wav::AudioStreamWAV::5298928348086594536::1777393409::1777393429::1::::<><><>0<>0<>10a16670cd2a67d8209d51f26e6ee0a1<>res://.godot/imported/clique_sfx10.wav-9854730a6b50a80f002dd4c8ae0a2202.sample::
 clique_sfx11.wav::AudioStreamWAV::2263568246313711381::1777393425::1777393429::1::::<><><>0<>0<>84fe3303dd8eebec5830a73845279388<>res://.godot/imported/clique_sfx11.wav-6f33265e4e1dd5770d22c9ea744ca629.sample::
-::res://textures/::1777396709
+::res://textures/::1777396869
 bouton_appuyé.png::CompressedTexture2D::5429809523024336855::1775478738::1776204192::1::::<><><>0<>0<>cafab1af5aa7a2e953e6732bab0c7a92<>res://.godot/imported/bouton_appuyé.png-6c874314a38730504435bcf74309bc32.ctex::
 bouton_défaut.png::CompressedTexture2D::6673991586897065441::1775478243::1776204192::1::::<><><>0<>0<>16fc2f94bd33820e4ef5f84df7da2bbf<>res://.godot/imported/bouton_défaut.png-96da4181658789e55aac92a75b7ce32c.ctex::
 cadre_hud.png::CompressedTexture2D::8242326686838781227::1775477666::1776204192::1::::<><><>0<>0<>c7cfc7e6cd87589d6cfd881fabb77675<>res://.godot/imported/cadre_hud.png-86bc8ea5cca238c99a4c0d8ee7119e35.ctex::

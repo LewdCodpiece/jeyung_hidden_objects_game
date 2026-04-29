@@ -1,7 +1,4 @@
-res://main.tscn
-res://menus_thèmes.tres
-res://main.gd
-res://écran.tscn
-res://écran.gd
 res://réaction.tscn
+res://menus_thèmes.tres
+res://écran.tscn
 res://réaction.gd

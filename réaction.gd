@@ -1,6 +1,14 @@
 extends Node2D
 
 @onready var animation = $animation
+@onready var sprite = $image
+
+@onready var liste_images_réactions: Array = [
+	preload("res://textures/images_réactions01.png"),
+	preload("res://textures/images_réactions02.png"),
+	preload("res://textures/images_réactions03.png"),
+	preload("res://textures/images_réactions04.png"),
+]
 
 var nb_réactions: int = 0
 
@@ -15,5 +23,10 @@ func _process(delta: float) -> void:
 
 
 func jouer_réaction():
+	# on choisi aléatoire le personnage
+	var réaction_image = liste_images_réactions.pick_random()
+	sprite.texture = réaction_image
+	
+	# on choisi aléatoire l'animation
 	var réaction_numéro: int = randi_range(1, nb_réactions)
 	animation.play("apparition"+ str(réaction_numéro).pad_zeros(2))

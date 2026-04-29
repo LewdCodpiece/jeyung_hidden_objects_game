@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://blvxguaccbsgj" path="res://écran.gd" id="1_tl1e3"]
 [ext_resource type="Theme" uid="uid://du6fqj4jse527" path="res://menus_thèmes.tres" id="2_7gf4j"]
 [ext_resource type="Texture2D" uid="uid://cqayt6r8hr53g" path="res://textures/icone_oeil.png" id="3_d8qyc"]
+[ext_resource type="PackedScene" uid="uid://ofv6s1c1ryky" path="res://réaction.tscn" id="4_ibegm"]
 
 [node name="écran" type="Node2D" unique_id=1253643248 groups=["persistant", "écrans"]]
 script = ExtResource("1_tl1e3")
@@ -66,6 +67,8 @@ text = "MENU_SETTINGS"
 [node name="bouton_quiter" type="Button" parent="hud/menu_échap/menu_boutons" unique_id=770357335]
 layout_mode = 2
 text = "MENU_QUIT"
+
+[node name="réaction" parent="." unique_id=598408005 instance=ExtResource("4_ibegm")]
 
 [connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
 [connection signal="mouse_entered" from="hud/Area2D" to="." method="_on_liste_indices_mouse_entered"]
